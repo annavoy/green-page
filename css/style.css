@@ -574,7 +574,7 @@ body {
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .section-hero {
-    background-image: url(/img/hero/hero-img-laptop-black@2x.webp);
+    background-image: url(../img/hero/hero-img-laptop-black@2x.webp);
   }
 }
 

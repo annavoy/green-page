@@ -545,10 +545,12 @@ body {
 @media screen and (min-width: 1280px) {
   .section-hero {
     background-image: url(../img/hero/hero-img-laptop-black.webp);
-    background-size: cover;
+    background-size: 50% 100%;
     background-position: right center;
+    max-width: 1280px;
     padding-top: 238px;
     padding-bottom: 50px;
+    margin: 0 auto;
   }
 
   .hero-title {

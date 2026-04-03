@@ -983,6 +983,60 @@ ul {
   margin-top: 8px;
 }
 
+.review-controls {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hidden-one,
+  .hidden-two {
+    display: block;
+  }
+
+  .review-list {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .review-list::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .review-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-snap-align: start;
+  }
+
+  .review-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .review-control-btn {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(122, 49, 69, 0.4);
+    border-radius: 50%;
+    background-color: #fff;
+    color: #7a3145;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .review-control-btn:hover,
+  .review-control-btn:focus {
+    background-color: #7a3145;
+    color: #fff;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .review-title {
     max-width: 553px;
